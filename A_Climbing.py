@@ -31,8 +31,11 @@ except Exception:
         raise RuntimeError("color_web 모듈(A_web)이 로드되지 않았습니다.")
 
 # ========= 사용자 환경 경로 =========
-NPZ_PATH       = r"C:\Users\PC\Desktop\Segmentation_Hold\stereo_params_scaled.npz"
-MODEL_PATH     = r"C:\Users\PC\Desktop\Segmentation_Hold\best_5.pt"
+# NPZ_PATH       = "C:\Users\PC\Desktop\Segmentation_Hold\stereo_params_scaled.npz"
+# MODEL_PATH     = "C:\Users\PC\Desktop\Segmentation_Hold\best_5.pt"
+
+NPZ_PATH       = r"/home/jsh/Desktop/JSH_CODE/jsh_code/stereo_params_scaled.npz"
+MODEL_PATH     = r"/home/jsh/Desktop/JSH_CODE/jsh_code/best_5.pt"
 
 CAM1_INDEX     = 1   # 왼쪽 카메라
 CAM2_INDEX     = 2   # 오른쪽 카메라
