@@ -1,0 +1,87 @@
+[ WARN:0@6.341] global cap_v4l.cpp:914 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@6.341] global cap.cpp:478 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[Info] image_size=(640, 480), baseline~357.00 mm
+[A_Climbing] find_laser error: [find_laser] 카메라 프레임 획득 실패 → continue without laser
+[A_Climbing] 레이저 좌표 취득 실패(취소/에러). 계속 진행.
+[Laser] Origin O (mm, LEFT-based) = [      -11.5         -52          -6]
+가능한 색상: red, orange, yellow, green, blue, purple, pink, white, black, gray, lime, sky
+필터할 색상 입력(엔터=전체): 선택된 클래스명: Hold_Green
+[Info] 경로 CSV: grip_records_green.csv
+[Init] First 10 frames: YOLO seg & merge ...
+
+0: 480x640 4 Hold_Greens, 2 Hold_Pinks, 1 Hold_Purple, 1 Hold_Red, 2 Hold_Yellows, 1806.4ms
+Speed: 7.7ms preprocess, 1806.4ms inference, 58.1ms postprocess per image at shape (1, 3, 480, 640)
+
+0: 480x640 2 Hold_Blacks, 4 Hold_Greens, 2 Hold_Pinks, 1 Hold_Purple, 1 Hold_Red, 2 Hold_Yellows, 1664.7ms
+Speed: 5.0ms preprocess, 1664.7ms inference, 60.5ms postprocess per image at shape (1, 3, 480, 640)
+  - frame 1/10: L=4  R=4
+
+0: 480x640 4 Hold_Greens, 2 Hold_Pinks, 1 Hold_Purple, 1 Hold_Red, 2 Hold_Yellows, 1676.4ms
+Speed: 6.2ms preprocess, 1676.4ms inference, 52.9ms postprocess per image at shape (1, 3, 480, 640)
+
+0: 480x640 2 Hold_Blacks, 4 Hold_Greens, 2 Hold_Pinks, 1 Hold_Purple, 1 Hold_Red, 2 Hold_Yellows, 1647.5ms
+Speed: 4.9ms preprocess, 1647.5ms inference, 48.7ms postprocess per image at shape (1, 3, 480, 640)
+  - frame 2/10: L=4  R=4
+
+0: 480x640 4 Hold_Greens, 3 Hold_Pinks, 1 Hold_Purple, 1 Hold_Red, 2 Hold_Yellows, 1455.4ms
+Speed: 4.8ms preprocess, 1455.4ms inference, 39.6ms postprocess per image at shape (1, 3, 480, 640)
+
+0: 480x640 2 Hold_Blacks, 4 Hold_Greens, 2 Hold_Pinks, 1 Hold_Purple, 1 Hold_Red, 2 Hold_Yellows, 1441.7ms
+Speed: 4.8ms preprocess, 1441.7ms inference, 44.5ms postprocess per image at shape (1, 3, 480, 640)
+  - frame 3/10: L=4  R=4
+
+0: 480x640 1 Hold_Black, 4 Hold_Greens, 3 Hold_Pinks, 1 Hold_Purple, 1 Hold_Red, 2 Hold_Yellows, 1507.0ms
+Speed: 4.7ms preprocess, 1507.0ms inference, 40.9ms postprocess per image at shape (1, 3, 480, 640)
+
+0: 480x640 1 Hold_Black, 4 Hold_Greens, 2 Hold_Pinks, 1 Hold_Purple, 1 Hold_Red, 2 Hold_Yellows, 1662.3ms
+Speed: 6.4ms preprocess, 1662.3ms inference, 67.0ms postprocess per image at shape (1, 3, 480, 640)
+  - frame 4/10: L=4  R=4
+
+0: 480x640 1 Hold_Black, 4 Hold_Greens, 3 Hold_Pinks, 1 Hold_Purple, 1 Hold_Red, 2 Hold_Yellows, 1527.3ms
+Speed: 5.4ms preprocess, 1527.3ms inference, 49.7ms postprocess per image at shape (1, 3, 480, 640)
+
+0: 480x640 1 Hold_Black, 4 Hold_Greens, 1 Hold_Pink, 1 Hold_Purple, 1 Hold_Red, 2 Hold_Yellows, 1556.0ms
+Speed: 4.8ms preprocess, 1556.0ms inference, 40.1ms postprocess per image at shape (1, 3, 480, 640)
+  - frame 5/10: L=4  R=4
+
+0: 480x640 1 Hold_Black, 1 Hold_Blue, 4 Hold_Greens, 2 Hold_Pinks, 1 Hold_Purple, 1 Hold_Red, 2 Hold_Yellows, 1454.9ms
+Speed: 4.8ms preprocess, 1454.9ms inference, 43.6ms postprocess per image at shape (1, 3, 480, 640)
+
+0: 480x640 1 Hold_Black, 1 Hold_Blue, 4 Hold_Greens, 1 Hold_Pink, 1 Hold_Purple, 1 Hold_Red, 2 Hold_Yellows, 1622.0ms
+Speed: 4.8ms preprocess, 1622.0ms inference, 39.5ms postprocess per image at shape (1, 3, 480, 640)
+  - frame 6/10: L=4  R=4
+
+0: 480x640 2 Hold_Blacks, 1 Hold_Blue, 4 Hold_Greens, 3 Hold_Pinks, 1 Hold_Purple, 1 Hold_Red, 2 Hold_Yellows, 1491.1ms
+Speed: 4.7ms preprocess, 1491.1ms inference, 52.2ms postprocess per image at shape (1, 3, 480, 640)
+
+0: 480x640 1 Hold_Blue, 4 Hold_Greens, 1 Hold_Pink, 1 Hold_Purple, 1 Hold_Red, 2 Hold_Yellows, 1491.2ms
+Speed: 5.5ms preprocess, 1491.2ms inference, 40.6ms postprocess per image at shape (1, 3, 480, 640)
+  - frame 7/10: L=4  R=4
+
+0: 480x640 2 Hold_Blacks, 1 Hold_Blue, 4 Hold_Greens, 3 Hold_Pinks, 1 Hold_Purple, 1 Hold_Red, 2 Hold_Yellows, 1481.6ms
+Speed: 5.0ms preprocess, 1481.6ms inference, 49.8ms postprocess per image at shape (1, 3, 480, 640)
+
+0: 480x640 1 Hold_Blue, 4 Hold_Greens, 1 Hold_Pink, 1 Hold_Purple, 1 Hold_Red, 2 Hold_Yellows, 1469.7ms
+Speed: 4.8ms preprocess, 1469.7ms inference, 38.4ms postprocess per image at shape (1, 3, 480, 640)
+  - frame 8/10: L=4  R=4
+
+0: 480x640 2 Hold_Blacks, 1 Hold_Blue, 4 Hold_Greens, 3 Hold_Pinks, 1 Hold_Purple, 1 Hold_Red, 2 Hold_Yellows, 1487.8ms
+Speed: 6.4ms preprocess, 1487.8ms inference, 50.4ms postprocess per image at shape (1, 3, 480, 640)
+
+0: 480x640 1 Hold_Blue, 4 Hold_Greens, 1 Hold_Pink, 1 Hold_Purple, 1 Hold_Red, 2 Hold_Yellows, 1447.8ms
+Speed: 5.2ms preprocess, 1447.8ms inference, 35.3ms postprocess per image at shape (1, 3, 480, 640)
+  - frame 9/10: L=4  R=4
+
+0: 480x640 3 Hold_Blacks, 4 Hold_Greens, 2 Hold_Pinks, 1 Hold_Purple, 1 Hold_Red, 2 Hold_Yellows, 1448.7ms
+Speed: 4.7ms preprocess, 1448.7ms inference, 44.1ms postprocess per image at shape (1, 3, 480, 640)
+
+0: 480x640 1 Hold_Blue, 4 Hold_Greens, 1 Hold_Pink, 1 Hold_Purple, 1 Hold_Red, 2 Hold_Yellows, 1521.7ms
+Speed: 5.1ms preprocess, 1521.7ms inference, 36.4ms postprocess per image at shape (1, 3, 480, 640)
+  - frame 10/10: L=4  R=4
+[Info] 공통 홀드 개수: 4
+[Warn] 경로 CSV 'grip_records_green.csv' 없음 → 인덱스 순서 사용
+[ΔAngles] (CSV order):
+  0->1: Δyaw=+4.10°, Δpitch=+2.16°, angle=4.63°
+  1->2: Δyaw=+2.06°, Δpitch=+7.89°, angle=8.16°
+  2->3: Δyaw=-1.84°, Δpitch=+3.89°, angle=4.30°
+[Init] 레이저 3D 또는 첫 타깃 없음 → 폴백 초기 조준 사용
