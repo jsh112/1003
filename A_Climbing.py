@@ -106,8 +106,8 @@ def _verify_paths():
 
 def open_cams(idx1, idx2, size):
     W, H = size
-    cap1 = cv2.VideoCapture(idx1, cv2.CAP_DSHOW)
-    cap2 = cv2.VideoCapture(idx2, cv2.CAP_DSHOW)
+    cap1 = cv2.VideoCapture(idx1, cv2.CAP_V4L2)
+    cap2 = cv2.VideoCapture(idx2, cv2.CAP_V4L2)
     cap1.set(cv2.CAP_PROP_FRAME_WIDTH,  W); cap1.set(cv2.CAP_PROP_FRAME_HEIGHT, H)
     cap2.set(cv2.CAP_PROP_FRAME_WIDTH,  W); cap2.set(cv2.CAP_PROP_FRAME_HEIGHT, H)
     if not cap1.isOpened() or not cap2.isOpened():
