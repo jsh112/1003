@@ -11,7 +11,7 @@
 import cv2, numpy as np, platform
 
 # ========= 설정 =========
-CAM0, CAM1 = 1, 2          # 카메라 인덱스
+CAM0, CAM1 = 1, 0          # 카메라 인덱스
 W, H = 640, 480        # 해상도
 USE_ECC_ALIGN = True       # 전/후 미세 흔들림(translation) 정합
 BLUR = 0                   # 1픽셀 유지면 0, 약간 번지면 3
@@ -34,7 +34,7 @@ def open_cam(idx):
     cap = cv2.VideoCapture(idx, be)
     cap.set(cv2.CAP_PROP_FRAME_WIDTH,  W)
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, H)
-    cap.set(cv2.CAP_PROP_FPS, 30)
+    cap.set(cv2.CAP_PROP_FPS, 20)
     return cap
 
 def to_gray_norm(bgr):
@@ -115,7 +115,9 @@ def capture_once_and_return(port="COM15", baud=115200,
     from servo_control import DualServoController
     import time, cv2
 
-    def _settle_and_grab(cap0, cap1, n=8):
+    def _settle_and_grab(cap0, cap1, n=3):
+    # 윈도우에서는 8로 사용
+    # def _settle_and_grab(cap0, cap1, n=8):
         f0 = f1 = None
         for _ in range(max(1, int(n))):
             r0, f0 = cap0.read()

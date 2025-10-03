@@ -37,6 +37,7 @@ except Exception:
 NPZ_PATH       = r"/home/jsh/Desktop/1003/stereo_params_scaled.npz"
 MODEL_PATH     = r"/home/jsh/Desktop/1003/best_5.pt"
 
+# 젯슨나노에서 1, 0으로 사용
 CAM1_INDEX     = 1   # 왼쪽 카메라
 CAM2_INDEX     = 0   # 오른쪽 카메라
 
@@ -623,6 +624,7 @@ def main():
 
     # 레이저 원점 O (LEFT 기준)
     L, O = _compute_laser_origin_left()
+    print(L, O)
 
     # 색상 필터 선택 (A_web → 고정 → 콘솔)
     selected_class_name, selected_color_label, CSV_GRIPS_PATH_dyn = _choose_color(args)
