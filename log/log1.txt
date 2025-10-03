@@ -1,0 +1,20 @@
+[ WARN:0@5.963] global cap_v4l.cpp:914 open VIDEOIO(V4L2:/dev/video2): can't open camera by index
+[ WARN:0@5.965] global cap.cpp:478 open VIDEOIO(V4L2): backend is generally available but can't be used to capture by index
+[Info] image_size=(640, 480), baseline~357.00 mm
+[A_Climbing] find_laser error: [find_laser] 카메라 프레임 획득 실패 → continue without laser
+[A_Climbing] 레이저 좌표 취득 실패(취소/에러). 계속 진행.
+[Laser] Origin O (mm, LEFT-based) = [      -11.5         -52          -6]
+가능한 색상: red, orange, yellow, green, blue, purple, pink, white, black, gray, lime, sky
+필터할 색상 입력(엔터=전체): Traceback (most recent call last):
+  File "/home/jsh/Desktop/1003/A_Climbing.py", line 688, in <module>
+    main()
+  File "/home/jsh/Desktop/1003/A_Climbing.py", line 628, in main
+    selected_class_name, selected_color_label, CSV_GRIPS_PATH_dyn = _choose_color(args)
+                                                                    ^^^^^^^^^^^^^^^^^^^
+  File "/home/jsh/Desktop/1003/A_Climbing.py", line 282, in _choose_color
+    selected_class_name, selected_color_label = ask_color_and_map_to_class(ALL_COLORS)
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jsh/Desktop/1003/A_Climbing.py", line 152, in ask_color_and_map_to_class
+    s = input("필터할 색상 입력(엔터=전체): ").strip().lower()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

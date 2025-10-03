@@ -34,11 +34,11 @@ except Exception:
 # NPZ_PATH       = "C:\Users\PC\Desktop\Segmentation_Hold\stereo_params_scaled.npz"
 # MODEL_PATH     = "C:\Users\PC\Desktop\Segmentation_Hold\best_5.pt"
 
-NPZ_PATH       = r"/home/jsh/Desktop/JSH_CODE/jsh_code/stereo_params_scaled.npz"
-MODEL_PATH     = r"/home/jsh/Desktop/JSH_CODE/jsh_code/best_5.pt"
+NPZ_PATH       = r"/home/jsh/Desktop/1003/stereo_params_scaled.npz"
+MODEL_PATH     = r"/home/jsh/Desktop/1003/best_5.pt"
 
-CAM1_INDEX     = 1   # 왼쪽 카메라
-CAM2_INDEX     = 2   # 오른쪽 카메라
+CAM1_INDEX     = 0   # 왼쪽 카메라
+CAM2_INDEX     = 1   # 오른쪽 카메라
 
 SWAP_DISPLAY   = False   # 화면 표시 좌/우 스와프
 
@@ -93,7 +93,7 @@ except Exception:
 
 def _parse_args():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--port", default="COM15")
+    ap.add_argument("--port", default="/dev/ttyUSB0")
     ap.add_argument("--baud", type=int, default=115200)
     ap.add_argument("--no_auto_advance", action="store_true")
     ap.add_argument("--no_web", action="store_true")
