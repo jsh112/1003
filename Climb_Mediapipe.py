@@ -7,9 +7,6 @@ try:
     _HAS_MP = True
 except Exception:
     _HAS_MP = False
-
-
-
 class PoseTracker:
     """
     - process(bgr) -> dict{name: (x,y)}  # 픽셀 좌표
